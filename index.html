@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>IPET 분야별 경력개발경로</title>
+<title>iPET 분야별 경력개발경로</title>
 
 <!-- Noto Sans KR 불러오기 -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,6 +15,73 @@
     background:var(--bg); color:var(--fg);
     font-family:'Noto Sans KR', sans-serif;
   }
+
+  /* 헤더 */
+  header {
+    background:;
+    color:#111;
+    display:flex; align-items:center; justify-content:center;
+    padding:28px 16px;
+    text-align:center;
+    border-bottom:4px double #e5e7eb;
+  }
+  header .container { max-width:1500px; width:100%; }
+  header h1 { margin:0; font-size:26px; font-weight:700; }
+  header h2 { margin:12px 0 0; font-size:16px; font-weight:400; color:#444;}
+
+  /* 본문 */
+  .wrap { padding:16px; display:flex; justify-content:center; }
+  .table-wrap { overflow:auto; border:1px solid var(--grid); border-radius:10px; }
+  table { 
+    width:1500px; 
+    border-collapse:separate; 
+    border-spacing:0; 
+    table-layout:fixed; 
+  }
+  th, td { 
+    vertical-align:top; 
+    border-right:1px solid var(--grid); 
+    border-bottom:1px solid var(--grid); 
+    padding:12px; 
+    word-wrap:break-word; 
+    word-break:keep-all; 
+  }
+  thead th { background:#f1f5f9; font-weight:700; text-align:left; }
+  tr:first-child th, tr:first-child td { border-top:0; }
+  th:first-child, td:first-child { position:sticky; left:0; background:#f3f8ff; z-index:1; }
+  tr:nth-child(even) td { background:#fcfcfd; }
+  .rowhdr { width:100px; text-align:center; font-weight:700; }
+
+
+  ul { margin:0; padding-left:18px; }
+  li { margin:4px 0; line-height:1.4; }
+
+  /* 맨 아래 행 */
+  tfoot th, tfoot td { 
+    background:var(--head); 
+    color:#fff; 
+    font-weight:700; 
+    text-align:center; 
+    vertical-align:middle; 
+  }
+  tfoot th { 
+    position:sticky; 
+    left:0; 
+    z-index:1; 
+  }
+tfoot .rowhdr {
+  background:var(--head);  
+  color:#fff;         
+  font-weight:700;
+}
+tfoot tr:last-child th,
+tfoot tr:last-child td {
+  background: var(--head);
+  color: #fff;
+  font-weight: 700;
+}
+
+
 /* 버튼형 링크 */
 .link-btn {
   display:inline-block;
@@ -44,55 +111,6 @@
   font-weight:700;
 }
 
-  /* 헤더 */
-  header {
-    background:var(--head);
-    color:#fff;
-    display:flex; align-items:center; justify-content:center;
-    padding:28px 16px;
-    text-align:center;
-  }
-  header .container { max-width:1500px; width:100%; }
-  header h1 { margin:0; font-size:22px; font-weight:700; }
-
-  /* 본문 */
-  .wrap { padding:16px; display:flex; justify-content:center; }
-  .table-wrap { overflow:auto; border:1px solid var(--grid); border-radius:10px; }
-  table { 
-    width:1500px; 
-    border-collapse:separate; 
-    border-spacing:0; 
-    table-layout:fixed; 
-  }
-  th, td { 
-    vertical-align:top; 
-    border-right:1px solid var(--grid); 
-    border-bottom:1px solid var(--grid); 
-    padding:12px; 
-    word-wrap:break-word; 
-    word-break:keep-all; 
-  }
-  thead th { background:#f1f5f9; font-weight:700; text-align:left; }
-  tr:first-child th, tr:first-child td { border-top:0; }
-  th:first-child, td:first-child { position:sticky; left:0; background:#f8fafc; z-index:1; }
-  tr:nth-child(even) td { background:#fcfcfd; }
-  .rowhdr { width:100px; text-align:center; font-weight:700; }
-  ul { margin:0; padding-left:18px; }
-  li { margin:4px 0; line-height:1.4; }
-
-  /* 맨 아래 행 */
-  tfoot th, tfoot td { 
-    background:#f8fafc; 
-    font-weight:700; 
-    text-align:center; 
-    vertical-align:middle; 
-  }
-  tfoot th { 
-    position:sticky; 
-    left:0; 
-    z-index:1; 
-  }
-
   /* 푸터 */
   footer {
     margin-top:20px;
@@ -107,7 +125,9 @@
 <body>
 <header>
   <div class="container">
-    <h1>IPET 분야별 경력개발경로</h1>
+    <h1>iPET 분야별 경력개발경로</h1>
+    <h2>본 경력경로는 iPET의 경력트랙(통합형/특화형)과 전문분야별/경력단계별 직무경험 가이드를 제공하고 있습니다.<br>
+ 경력개발계획서 작성 시 경력목표와 희망 업무경험 작성 시 본 경력개발정보를 참고하시기 바랍니다</h2>
   </div>
 </header>
 
@@ -162,9 +182,6 @@
           <td>
             <ul>
               <li>농식품 기술인증제 운영·판로지원</li>
-              <li>기술실시 및 기술료 관리</li>
-              <li>농식품 우수성과 발굴 및 확산</li>
-              <li>기술상용화 전략 수립·연계지원</li>
             </ul>
           </td>
           <td>
@@ -196,20 +213,21 @@
             <ul>
               <li>R&amp;D 정책 지원</li>
               <li>농식품 과학기술 정책연구</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
               <li>R&amp;D성과 조사분석 및 관리</li>
               <li>국가R&amp;D사업 성과평가 대응</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>사업관리(하)</li>
+              <li>기술실시 및 기술료 관리</li>
               <li>연구개발비 정산 및 사후관리</li>
+              <li>사업관리(하)</li>
             </ul>
           </td>
           <td>
             <ul>
-              <li>R&amp;D 상용화 지원제도 운영</li>
-              <li>농식품 R&amp;D 상용화 실태 조사 등</li>
+              <li>기술상용화 전략 수립·연계지원</li>
+              <li>농식품 우수성과 발굴 및 확산</li>
             </ul>
           </td>
           <td>
@@ -222,9 +240,9 @@
           </td>
           <td>
             <ul>
+              <li>급여 및 세금관리</li>
               <li>내외부 감사 관련 업무</li>
               <li>대내외 민원 관련 업무</li>
-              <li>급여 및 세금관리</li>
               <li>보안관리</li>
               <li>안전 및 보건</li>
               <li>총무</li>
@@ -233,7 +251,6 @@
           <td>
             <ul>
               <li>정보보안 및 개인정보보호</li>
-              <li>포털 관리</li>
             </ul>
           </td>
         </tr>
@@ -241,25 +258,40 @@
         <!-- R4 -->
         <tr>
           <th class="rowhdr">2단계</th>
-          <td><ul><li>R&amp;D사업 지원제도 운영</li></ul></td>
           <td></td>
-          <td><ul><li>R&amp;D 상용화 지원제도 운영</li></ul></td>
+          <td>
+	<ul>
+	<li>R&amp;D사업 지원제도 운영</li>
+	<li>농림식품과학기술위원회 운영지원</li>
+	</ul>
+	</td>
+          <td><ul>
+	<li>R&amp;D 상용화 지원제도 운영</li>
+	<li>농식품 R&amp;D 상용화 실태조사 등</li>
+	<li>농식품분야 우수·유망기술 확산</li>
+	</ul></td>
           <td>
             <ul>
               <li>국내외 R&amp;D 협력 네트워크 구축</li>
-              <li>윤리경영·반부패 청렴정책 업무</li>
               <li>이사회 운영 및 관리</li>
             </ul>
           </td>
-          <td><ul><li>역량 강화 프로그램 발굴·운영</li></ul></td>
-          <td></td>
+          <td><ul>
+	<li>임직원 역량 강화 프로그램 발굴·운영</li>
+              <li>윤리경영·반부패 청렴정책 업무</li>
+	</ul></td>
+          <td>
+	<ul>
+	<li>내부포털 관리 및 R&amp;D 정보수집·운영</li>
+	</ul>
+	</td>
         </tr>
 
         <!-- R5 -->
         <tr>
           <th class="rowhdr">1단계</th>
-          <td><ul><li>고객서비스제도 운영</li></ul></td>
           <td></td>
+          <td><ul><li>고객서비스제도 운영</li></ul></td>
           <td></td>
           <td>
             <ul>
@@ -279,7 +311,7 @@
 
 <tfoot>
   <tr>
-    <th class="rowhdr">전문가 트랙</th>
+    <th class="rowhdr">특화형</th>
     <td>
       <a class="link-btn" href="rndStrategy.html" aria-label="R&D 전략/정책 전문가 상세 페이지로 이동">
         R&amp;D 전략/정책 전문가 <span class="chev">›</span>
@@ -313,9 +345,9 @@
   </tr>
 
         <tr>
-          <th class="rowhdr">구분</th>
-          <td colspan="3">사업직군</td>
-          <td colspan="3">경영직군</td>
+          <th class="rowhdr">통합형</th>
+          <td colspan="3">농식품 R&D</td>
+          <td colspan="3">경영</td>
         </tr>
       </tfoot>
     </table>
@@ -329,3 +361,4 @@
 </footer>
 </body>
 </html>
+
