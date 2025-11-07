@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>정보화 전문가 프로파일</title>
+
+<!-- Noto Sans KR -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#fff; --fg:#111; --grid:#e5e7eb; --head:#00448B; --foot:#343A40;
+    --label:#f1f3f5; --sub:#eef2f6;
+  }
+  html,body{margin:0;background:var(--bg);color:var(--fg);font-family:'Noto Sans KR',sans-serif;}
+
+  /* 헤더/푸터: index처럼 위아래 여백 없이 딱 붙게 */
+  header{background:var(--head);color:#fff;height:64px;display:flex;align-items:center;justify-content:center;}
+  header h1{margin:0;font-size:20px;font-weight:700}
+  footer{background:var(--foot);color:#fff;text-align:center;padding:16px 8px}
+
+  /* 본문 */
+  .wrap{padding:16px;display:flex;justify-content:center}
+  .table-wrap{width:100%;max-width:1200px;overflow:auto;border:1px solid var(--grid);border-radius:10px}
+
+  /* 10열 고정 표 */
+  table{width:1200px;border-collapse:separate;border-spacing:0;table-layout:fixed}
+  colgroup col{width:10%} /* 10등분: 각 10% */
+  th,td{border-right:1px solid var(--grid);border-bottom:1px solid var(--grid);padding:10px 12px;vertical-align:top;word-break:keep-all}
+  tr:first-child th, tr:first-child td{border-top:0}
+  th.label{background:var(--label);text-align:center;font-weight:700}
+  .subhdr{background:var(--sub);text-align:center;font-weight:700}
+  .center{text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>정보화 전문가 프로파일</h1>
+</header>
+
+<div class="wrap">
+  <div class="table-wrap" role="region" aria-label="정보화 전문가 프로파일 표" tabindex="0">
+    <table>
+
+      <!-- 10열 고정 -->
+      <colgroup>
+        <col><col><col><col><col><col><col><col><col><col>
+      </colgroup>
+
+      <!-- 직군 / 직렬 (한 행에 배치) -->
+      <tr>
+        <th class="label">직군</th>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">경영직군</td>
+        <th class="label">직렬</th>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">정보화</td>
+      </tr>
+
+      <!-- 특화형 전문가 트랙 (라벨 1,2열 병합 → 값 3~10열) -->
+      <tr>
+        <th class="label" colspan="3">전문분야</th>
+        <td colspan="7" style="text-align:center; vertical-align:middle;">정보화 전문가</td>
+      </tr>
+
+      <!-- 정의 -->
+      <tr>
+        <th class="label">정의</th>
+        <td colspan="9" style="text-align:center; vertical-align:middle;">정보화 사업 기획, 시스템 운영, 보안·개인정보 보호를 총괄하여 기관의 디지털 전환과 안전한 정보 활용을 이끄는 전문가</td>
+      </tr>
+
+      <!-- 관련부서 -->
+      <tr>
+        <th class="label">관련부서</th>
+        <td colspan="9" style="text-align:center; vertical-align:middle;">디지털혁신실</td>
+      </tr>
+
+      <!-- 관련직무: 직무구분 / 직무명 (표 안의 표 X, 동일 표에서 병합으로 구성) -->
+      <tr>
+        <th class="label" rowspan="4">관련직무</th>
+        <th class="subhdr" colspan="2">직무구분</th>
+        <th class="subhdr" colspan="7">직무명</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R2</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">정보화 사업기획(시스템‧데이터 성과측정‧평가 대응, 내외부 시스템 간 연계 등), 정보화 운영(하드웨어‧소프트웨어‧네트워크 점검‧개선‧운영 등)</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R3</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">정보보안 및 개인정보보호(정보보안 감사, 시스템 취약점 점검, 개인정보보호 체계 운영 등)</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R4</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">대민 누리집·내부포털 관리 및 R&D 정보수집·운영</td>
+      </tr>
+      <!-- 핵심역량: 핵심역량명 / 핵심역량설명 -->
+      <tr>
+        <th class="label" rowspan="7">핵심역량</th>
+        <th class="subhdr" colspan="2">핵심역량명</th>
+        <th class="subhdr" colspan="7">핵심역량설명</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">정보화 기획·운영</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">정보화 사업을 기획하고 성과를 측정·분석하여 시스템 고도화와 기관 간 연계를 추진할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">IT인프라 및 클라우드 운영 관리</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">클라우드 구성/이해, 정보자원 가상화 기술, 인프라 구축/운영 , DR/BCP 설계 등 안정적으로 관리 할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">정보보안·개인정보 보호</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">정보보안 관리체계 수립, 보안 점검 및 모의훈련, 개인정보 유·노출 관리체계 구축 등을 통해 안전한 정보 환경을 유지할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">대민 서비스·웹 운영</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">홈페이지와 내부포털의 요구분석, 설계·운영, 접근성·호환성 개선을 통해 이용자 중심의 정보 서비스를 제공할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">데이터 활용·협업</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">공공데이터 개방 및 기관 간 협업을 통해 정보자원을 개방·활용하고 정책적·산업적 가치를 창출할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">정보시스템 구축</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">정보시스템 사용자 니즈 파악, 요구사항 정의, 시스템 설계 및 구축, 업무 프로세스 등을 분석하여 구축하는 역량</td>
+      </tr>
+      <!-- 대외활동: 필요 경험(전체 폭) -->
+      <tr>
+        <th class="label" rowspan="2">대외활동</th>
+        <th class="subhdr" colspan="9">필요 경험</th>
+      </tr>
+      <tr>
+        <td colspan="9">
+  <ul style="margin:0; padding-left:20px;">
+    <li>정보화 사업 사전검토·심의 자문위원 참여</li>
+    <li>공공 SW 감리·품질 자문활동</li>
+    <li>국내외 세미나 특강/발표/토론</li>
+    <li>포럼 패널 참석 및 외부강의 활동</li>
+  </ul>
+</td>
+      </tr>
+
+      <!-- 관련전공: 전공명 / 관련성 설명 -->
+      <tr>
+        <th class="label" rowspan="3">관련전공</th>
+        <th class="subhdr" colspan="4">전공명</th>
+        <th class="subhdr" colspan="5">관련성 설명</th>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">컴퓨터관련 전공</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">시스템 구축·운영, 네트워크 관리, 데이터베이스 관리, AI/데이터분석 관리</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">보안관련 전공</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">사이버 공격 및 정보보안, 개인정보보호 관리</td>
+      </tr>
+      <!-- 어학: 외국어명 / 권장 수준 -->
+      <tr>
+        <th class="label" rowspan="2">어학</th>
+        <th class="subhdr" colspan="4">외국어명</th>
+        <th class="subhdr" colspan="5">권장 수준</th>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">영어</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">독해 가능</td>
+      </tr>
+
+      <!-- 교육: 교육과정명 / 교육기관명 -->
+      <tr>
+        <th class="label" rowspan="13">교육</th>
+        <th class="subhdr" colspan="6">교육과정명</th>
+        <th class="subhdr" colspan="3">교육기관명</th>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">범정부 EA 정보등록 및 성과관리</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">행정안전부</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">공공데이터 품질관리/데이터 활용역량 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">행정안전부</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">소프트웨어개발보안 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">행정안전부</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">개인정보보호법 및 관리체계 등 관련 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">행정안전부</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">정보화 법제도 관리감독 지원가이드</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">과학기술정보통신부</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">데이터베이스 및 빅데이터 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">과학기술정보통신부</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">정보시스템 구축 운영 실무</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">사이버안전훈련센터</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">웹/시스템/네트워크 취약점 진단</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">사이버안전훈련센터</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">사이버 도상훈련</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">사이버안전훈련센터</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">네트워크 관련 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">나라배움터</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">정보보안 보안적합성 검증, 정보보호시스템 운영관리, 정보시스템 및 전산장비 전문교육 등</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">국가정보원</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">ISMS-P 구축·운영 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">개인정보위원회</td>
+      </tr>
+      <!-- 자격: 자격증명 / 주관처 / 자격구분 -->
+      <tr>
+        <th class="label" rowspan="11">자격</th>
+        <th class="subhdr" colspan="5">자격증명</th>
+        <th class="subhdr" colspan="2">주관처</th>
+        <th class="subhdr" colspan="2">자격구분</th>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">정보처리기사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국산업인력공단</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가기술자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">정보보안기사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국산업인력공단</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가기술자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">빅데이터분석기사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국데이터산업진흥원(K-DATA)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가기술자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">CCNA, CCNP, CCIE</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">Cisco Systems, Inc. (시스코)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국제민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">ITIL</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">PeopleCert(구. OGC)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국제민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">CISSP(국제공인 정보시스템 보안전문가)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">(ISC)²</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국제민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">OCA / OCP / OCM (Oracle 자격)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">Oracle Corporation</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국제민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">네트워크관리사(1급, 2급)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국정보통신자격협회(KAIT)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국내민간자격</td>
+      </tr>
+       <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">개인정보관리사(CPPG)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">(사)한국CPO포럼</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국내민간자격</td>
+      </tr>
+       <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">정보시스템감리원</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">정보시스템감리협회(KAISA)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">법정자격(감리법)</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  본 사이트는 농림식품기술기획평가원의 실무자를 위해 제작되었습니다.<br>
+  저작권자의 허락 없이 농림식품기술기획평가원 이외에 무단 복제, 배포, 전송 등을 금지합니다.<br>
+  ⓒ2025 KIRD. All rights reserved.
+</footer>
+
+</body>
+</html>
+
