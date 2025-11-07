@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>기술사업화 전문가 프로파일</title>
+
+<!-- Noto Sans KR -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#fff; --fg:#111; --grid:#e5e7eb; --head:#00448B; --foot:#343A40;
+    --label:#f1f3f5; --sub:#eef2f6;
+  }
+  html,body{margin:0;background:var(--bg);color:var(--fg);font-family:'Noto Sans KR',sans-serif;}
+
+  /* 헤더/푸터: index처럼 위아래 여백 없이 딱 붙게 */
+  header{background:var(--head);color:#fff;height:64px;display:flex;align-items:center;justify-content:center;}
+  header h1{margin:0;font-size:20px;font-weight:700}
+  footer{background:var(--foot);color:#fff;text-align:center;padding:16px 8px}
+
+  /* 본문 */
+  .wrap{padding:16px;display:flex;justify-content:center}
+  .table-wrap{width:100%;max-width:1200px;overflow:auto;border:1px solid var(--grid);border-radius:10px}
+
+  /* 10열 고정 표 */
+  table{width:1200px;border-collapse:separate;border-spacing:0;table-layout:fixed}
+  colgroup col{width:10%} /* 10등분: 각 10% */
+  th,td{border-right:1px solid var(--grid);border-bottom:1px solid var(--grid);padding:10px 12px;vertical-align:top;word-break:keep-all}
+  tr:first-child th, tr:first-child td{border-top:0}
+  th.label{background:var(--label);text-align:center;font-weight:700}
+  .subhdr{background:var(--sub);text-align:center;font-weight:700}
+  .center{text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>기술사업화 전문가 프로파일</h1>
+</header>
+
+<div class="wrap">
+  <div class="table-wrap" role="region" aria-label="기술사업화 전문가 프로파일 표" tabindex="0">
+    <table>
+
+      <!-- 10열 고정 -->
+      <colgroup>
+        <col><col><col><col><col><col><col><col><col><col>
+      </colgroup>
+
+      <!-- 직군 / 직렬 (한 행에 배치) -->
+      <tr>
+        <th class="label">직군</th>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">사업직군</td>
+        <th class="label">직렬</th>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">기술사업화</td>
+      </tr>
+
+      <!-- 특화형 전문가 트랙 (라벨 1,2열 병합 → 값 3~10열) -->
+      <tr>
+        <th class="label" colspan="3">전문분야</th>
+        <td colspan="7" style="text-align:center; vertical-align:middle;">기술사업화 전문가</td>
+      </tr>
+
+      <!-- 정의 -->
+      <tr>
+        <th class="label">정의</th>
+        <td colspan="9" style="text-align:center; vertical-align:middle;">농림식품 연구성과의 우수성과를 발굴·확산하고, 사업화 연계지원 및 제도 운영을 통해 기술혁신의 현장 적용을 촉진하는 전문가</td>
+      </tr>
+
+      <!-- 관련부서 -->
+      <tr>
+        <th class="label">관련부서</th>
+        <td colspan="9" style="text-align:center; vertical-align:middle;">기술상용화실</td>
+      </tr>
+
+      <!-- 관련직무: 직무구분 / 직무명 (표 안의 표 X, 동일 표에서 병합으로 구성) -->
+      <tr>
+        <th class="label" rowspan="4">관련직무</th>
+        <th class="subhdr" colspan="2">직무구분</th>
+        <th class="subhdr" colspan="7">직무명</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R2</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">농식품 기술인증제 운영 및 판로지원</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R3</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">기술상용화 전략 수립 및 연계지원 프로그램 운영, 농식품 우수성과 발굴 및 확산</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R4</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">R&D 상용화 지원제도 운영(코디네이터, 컨설팅 등), 농식품 R&D 상용화 실태 조사 및 추적 조사 등, 농식품분야 우수·유망기술 확산</td>
+      </tr>
+
+      <!-- 핵심역량: 핵심역량명 / 핵심역량설명 -->
+      <tr>
+        <th class="label" rowspan="9">핵심역량</th>
+        <th class="subhdr" colspan="2">핵심역량명</th>
+        <th class="subhdr" colspan="7">핵심역량설명</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">기술인증 기획·운영</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">신기술·혁신·녹색인증 등 농식품 기술인증 제도의 계획 수립, 관련 규정 개정 등 제도 개선관리, 심사·컨설팅·설명회 운영 및 사후관리까지 총괄할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">사업화 전략 수립</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">농식품 우수성과와 유망기술에 대한 상용화 전략과 연계지원 프로그램을 기획·추진할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">우수기술 발굴·확산</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">농식품 R&D 우수기술 발굴 및 확산을 위한 행사를 기획하고 개최할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">우수기술 시장연계</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">인증기술 및 우수성과를 시장에 진입시키고, 판로 개척 및 확산 활동을 통해 산업 현장 적용을 촉진하는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">네트워크·협력</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">외부 전문가, 기업, 유관기관과 협력 네트워크를 구축하여 사업화 지원 및 기술거래 연계를 활성화하는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">상용화 실태조사 분석</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">농식품 R&D 상용화 실태조사 등 조사·분석을 수행하고 상용화 성과를 체계적으로 관리할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">플랫폼·제도 운영</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">상용화 플랫폼을 기획·운영하고, 인증 데이터 관리 및 지침 개정 등 제도를 개선·관리할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">컨설팅·지원</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">기업·연구기관을 대상으로 기술사업화 컨설팅·클리닉을 수행하고, 현장 애로사항을 진단·조정할 수 있는 역량</td>
+      </tr>
+
+      </tr>
+
+      <!-- 대외활동: 필요 경험(전체 폭) -->
+      <tr>
+        <th class="label" rowspan="2">대외활동</th>
+        <th class="subhdr" colspan="9">필요 경험</th>
+      </tr>
+      <tr>
+        <td colspan="9">
+  <ul style="margin:0; padding-left:20px;">
+    <li>자문회의, 사업기획/평가 자문위원 참여</li>
+    <li>국내외 학회 운영위원 및 자문활동</li>
+    <li>국내외 세미나 특강/발표/토론</li>
+    <li>국내외 논문 발표, 출판물 저자, 언론기고</li>
+  </ul>
+</td>
+      </tr>
+
+      <!-- 관련전공: 전공명 / 관련성 설명 -->
+      <tr>
+        <th class="label" rowspan="5">관련전공</th>
+        <th class="subhdr" colspan="4">전공명</th>
+        <th class="subhdr" colspan="5">관련성 설명</th>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">기술경영</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술개발과 사업화의 연계를 전문적으로 다루는 융합 전공</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">법학</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술거래 중계 및 컨설팅, 기술인증관련 규정 제개정 과정에서 중요한 역량을 뒷받침</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">경영·경제·상경계열</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">사업화 전략 수립, 기업재무 및 경영진단, 성과 확산 활동에 직접적으로 활용</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">농업·식품·바이오 관련 전공</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">연구성과의 기술적 특성을 이해하고 시장 적용 가능성을 판단하는 데 필요</td>
+      </tr>
+      <!-- 어학: 외국어명 / 권장 수준 -->
+      <tr>
+        <th class="label" rowspan="2">어학</th>
+        <th class="subhdr" colspan="4">외국어명</th>
+        <th class="subhdr" colspan="5">권장 수준</th>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">영어</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">독해 가능</td>
+      </tr>
+
+      <!-- 교육: 교육과정명 / 교육기관명 -->
+      <tr>
+        <th class="label" rowspan="5">교육</th>
+        <th class="subhdr" colspan="6">교육과정명</th>
+        <th class="subhdr" colspan="3">교육기관명</th>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">녹색인증, 국가인증(환경표지인증 등) 관련 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">한국산업기술진흥원, 한국환경산업기술원</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">TCC 기술사업화 전문코디네이터 양성</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">Tool을 활용한 기업컨설팅 실무과정</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">기술라이선싱 전문가 양성과정</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+      </tr>
+      <!-- 자격: 자격증명 / 주관처 / 자격구분 -->
+      <tr>
+        <th class="label" rowspan="7">자격</th>
+        <th class="subhdr" colspan="5">자격증명</th>
+        <th class="subhdr" colspan="2">주관처</th>
+        <th class="subhdr" colspan="2">자격구분</th>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술거래사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">사단법인 한국기술거래사회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가전문자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술가치평가사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술창업지도사(TSC)</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술사업화전문코디네이터</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술사업가치업평가사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기술사업평가사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국기업·기술가치평가협회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">민간자격</td>
+      </tr>
+      <tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  본 사이트는 농림식품기술기획평가원의 실무자를 위해 제작되었습니다.<br>
+  저작권자의 허락 없이 농림식품기술기획평가원 이외에 무단 복제, 배포, 전송 등을 금지합니다.<br>
+  ⓒ2025 KIRD. All rights reserved.
+</footer>
+
+</body>
+</html>
+
