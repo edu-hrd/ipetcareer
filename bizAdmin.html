@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>경영관리 전문가 프로파일</title>
+
+<!-- Noto Sans KR -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#fff; --fg:#111; --grid:#e5e7eb; --head:#00448B; --foot:#343A40;
+    --label:#f1f3f5; --sub:#eef2f6;
+  }
+  html,body{margin:0;background:var(--bg);color:var(--fg);font-family:'Noto Sans KR',sans-serif;}
+
+  /* 헤더/푸터: index처럼 위아래 여백 없이 딱 붙게 */
+  header{background:var(--head);color:#fff;height:64px;display:flex;align-items:center;justify-content:center;}
+  header h1{margin:0;font-size:20px;font-weight:700}
+  footer{background:var(--foot);color:#fff;text-align:center;padding:16px 8px}
+
+  /* 본문 */
+  .wrap{padding:16px;display:flex;justify-content:center}
+  .table-wrap{width:100%;max-width:1200px;overflow:auto;border:1px solid var(--grid);border-radius:10px}
+
+  /* 10열 고정 표 */
+  table{width:1200px;border-collapse:separate;border-spacing:0;table-layout:fixed}
+  colgroup col{width:10%} /* 10등분: 각 10% */
+  th,td{border-right:1px solid var(--grid);border-bottom:1px solid var(--grid);padding:10px 12px;vertical-align:top;word-break:keep-all}
+  tr:first-child th, tr:first-child td{border-top:0}
+  th.label{background:var(--label);text-align:center;font-weight:700}
+  .subhdr{background:var(--sub);text-align:center;font-weight:700}
+  .center{text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>경영관리 전문가 프로파일</h1>
+</header>
+
+<div class="wrap">
+  <div class="table-wrap" role="region" aria-label="경영관리 전문가 프로파일 표" tabindex="0">
+    <table>
+
+      <!-- 10열 고정 -->
+      <colgroup>
+        <col><col><col><col><col><col><col><col><col><col>
+      </colgroup>
+
+      <!-- 직군 / 직렬 (한 행에 배치) -->
+      <tr>
+        <th class="label">직군</th>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">경영직군</td>
+        <th class="label">직렬</th>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">경영관리</td>
+      </tr>
+
+      <!-- 특화형 전문가 트랙 (라벨 1,2열 병합 → 값 3~10열) -->
+      <tr>
+        <th class="label" colspan="3">전문분야</th>
+        <td colspan="7" style="text-align:center; vertical-align:middle;">경영관리 전문가</td>
+      </tr>
+
+      <!-- 정의 -->
+      <tr>
+        <th class="label">정의</th>
+        <td colspan="9" style="text-align:center; vertical-align:middle;">경영자원을 종합적으로 관리하여 조직의 안정적 운영과 구성원의 성과 창출을 지원하는 전문가</td>
+      </tr>
+
+      <!-- 관련부서 -->
+      <tr>
+        <th class="label">관련부서</th>
+        <td colspan="9" style="text-align:center; vertical-align:middle;">인재경영실, 운영지원실</td>
+      </tr>
+
+      <!-- 관련직무: 직무구분 / 직무명 (표 안의 표 X, 동일 표에서 병합으로 구성) -->
+      <tr>
+        <th class="label" rowspan="6">관련직무</th>
+        <th class="subhdr" colspan="2">직무구분</th>
+        <th class="subhdr" colspan="7">직무명</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R1</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">인적자원 관리(채용, 승진, 포상, 징계, 임피제, 임원추천위원회 등)</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R2</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">개인평가 및 보수제도 관리, 노무관리 및 직원고충처리, 인력증원, 회계 및 자금관리(결산, 세무, 출납 및 법인카드, 자금 등)</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R3</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">급여 및 세금관리(급여지급, 4대보험, 연말정산, 퇴충금, 제세금 등), 기록관리, 보안관리(보안평가‧감사대응, 비밀관리, 을지연습‧민방위훈련, 당직운영 등), 안전 및 보건(이행계획 수립, 안전점검대응, 온실가스 등 에너지관리 등), 총무(계약관리, 서무, 구매 및 자산관리, 문서 및 내부규정 관리 등), 환경 및 청사·시설관리, 내외부 감사 관련 업무, 대내외 민원 관련 업무</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R4</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">임직원 역량 강화 프로그램 발굴·운영, 윤리경영 및 반부패 청렴정책 관한 업무</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">R5</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">복리후생(선택적복지제도 등 복리후생제도 기획‧운영,가족친화인증대응등), 복무관리(연차, 유연근무, 재택근무, 국외출장심의위원회 등)</td>
+      </tr>
+      <!-- 핵심역량: 핵심역량명 / 핵심역량설명 -->
+      <tr>
+        <th class="label" rowspan="6">핵심역량</th>
+        <th class="subhdr" colspan="2">핵심역량명</th>
+        <th class="subhdr" colspan="7">핵심역량설명</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">조직운영 기획·관리</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">기관의 인사, 재무, 총무 등 경영자원을 통합적으로 기획·운영하여 조직 운영의 안정성과 효율성을 높일 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">법규 준수 및 제도 이해</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">노무·세무·안전·보안 등 관련 법규와 제도를 숙지하고 이를 실무에 준수·적용할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">분석·문제해결력</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">조직 운영 과정에서 발생하는 인사, 재무, 노사, 안전 등 다양한 문제를 분석하고 합리적인 대안을 제시할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">대내외 협력·조정 능력</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">직원, 노조, 감사·정부기관 등 다양한 이해관계자와 원활히 협력하고 갈등을 조정할 수 있는 역량</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">책임경영 및 윤리의식</td>
+        <td colspan="7" style="text-align:left; vertical-align:middle;">공정성과 투명성을 바탕으로 조직 구성원의 신뢰를 확보하고, 책임 있는 경영 환경을 조성할 수 있는 역량</td>
+      </tr>
+      <!-- 대외활동: 필요 경험(전체 폭) -->
+      <tr>
+        <th class="label" rowspan="2">대외활동</th>
+        <th class="subhdr" colspan="9">필요 경험</th>
+      </tr>
+      <tr>
+        <td colspan="9">
+  <ul style="margin:0; padding-left:20px;">
+    <li>공공기관 경영평가 위원 참여</li>
+    <li>채용·승진·성과관리 평가위원 참여</li>
+    <li>예산·회계·계약 심의 및 심사 자문위원 참여</li>
+    <li>포럼 패널 참석 및 외부강의 활동</li>
+  </ul>
+</td>
+      </tr>
+
+      <!-- 관련전공: 전공명 / 관련성 설명 -->
+      <tr>
+        <th class="label" rowspan="4">관련전공</th>
+        <th class="subhdr" colspan="4">전공명</th>
+        <th class="subhdr" colspan="5">관련성 설명</th>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">경영학, 행정학</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">조직 전략 수립, 정책 이해, 성과평가 대응의 기반</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">산업안전 관련</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">안전보건체계 수립, 법규 대응, 안전점검·위험성 평가 등 직무 연계</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">환경관리 관련</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">환경·시설·안전 직무와 직접 연계</td>
+      </tr>
+      <!-- 어학: 외국어명 / 권장 수준 -->
+      <tr>
+        <th class="label" rowspan="2">어학</th>
+        <th class="subhdr" colspan="4">외국어명</th>
+        <th class="subhdr" colspan="5">권장 수준</th>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align:center; vertical-align:middle;">영어</td>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">독해 가능</td>
+      </tr>
+
+      <!-- 교육: 교육과정명 / 교육기관명 -->
+      <tr>
+        <th class="label" rowspan="11">교육</th>
+        <th class="subhdr" colspan="6">교육과정명</th>
+        <th class="subhdr" colspan="3">교육기관명</th>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">인사관리 및 인적자원관리, 근로기준법</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">고용노동부 (한국산업인력공단)</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">근로기준법 등 관련 법령 이해</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">한국고용노동교육원 등</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">인사관리, 직무관리</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">국가과학기술인력개발원(KIRD)</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">근로자 안전보건교육 등 관련 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">안전보건교육기관</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">공공기관 녹색제품 의무구매제도 온라인 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">한국환경산업기술원</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">사회적기업제품 우선구매 활성화 온라인 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">한국사회적기업진흥원</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">청렴관련 교육</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">국민권익위원회 청렴연수원</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">연구행정 연수프로그램</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">국가과학기술인력개발원(KIRD)</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">회계관리, 구매계약, 예산관리 등 직무전문과정</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">국가과학기술인력개발원(KIRD)</td>
+      </tr>
+      <tr>
+        <td colspan="6" style="text-align:center; vertical-align:middle;">기록 관리(기록관리 교육역량 강화, 관리자 및 처리과 관련 교육, 재난 피해 기록물 응급 복구 등)</td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">국가기록원 기록관리교육센터</td>
+      </tr>
+      <!-- 자격: 자격증명 / 주관처 / 자격구분 -->
+      <tr>
+        <th class="label" rowspan="10">자격</th>
+        <th class="subhdr" colspan="5">자격증명</th>
+        <th class="subhdr" colspan="2">주관처</th>
+        <th class="subhdr" colspan="2">자격구분</th>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">공인노무사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국산업인력공단</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가전문자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">공인회계사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">금융위원회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가전문자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">경영지도사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국산업인력공단</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가전문자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">회계관리 1급</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국공인회계사회</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">재경관리사</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">삼일회계법인</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">민간자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">산업안전지도사, 산업안전·산업위생관리·인간공학(산업)기사 등</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국산업인력공단</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가기술자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">수질환경, 대기환경, 토양환경, 소음진동, 폐기물처리, 온실가스관리 (산업)기사 등</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국산업인력공단</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가기술자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">건축, 전기, 설비 관련 자격증</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">한국산업인력공단</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">국가기술자격</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:center; vertical-align:middle;">기록물관리 전문요원</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">행정안전부</td>
+        <td colspan="2" style="text-align:center; vertical-align:middle;">법정 전문요원 제도</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  본 사이트는 농림식품기술기획평가원의 실무자를 위해 제작되었습니다.<br>
+  저작권자의 허락 없이 농림식품기술기획평가원 이외에 무단 복제, 배포, 전송 등을 금지합니다.<br>
+  ⓒ2025 KIRD. All rights reserved.
+</footer>
+
+</body>
+</html>
+
